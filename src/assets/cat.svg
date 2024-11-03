@@ -1,0 +1,32 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base circle -->
+  <circle cx="60" cy="60" r="55" fill="black" opacity="0.1"/>
+  
+  <!-- Cat face -->
+  <path d="M60 30 L90 80 H30 Z" 
+        fill="none" 
+        stroke="black" 
+        stroke-width="4" 
+        stroke-linejoin="round"/>
+  
+  <!-- Ears -->
+  <path d="M60 30 L45 60 L30 35 Z" 
+        fill="black" 
+        opacity="0.9"/>
+  <path d="M60 30 L75 60 L90 35 Z" 
+        fill="black" 
+        opacity="0.9"/>
+  
+  <!-- Eyes -->
+  <circle cx="47.5" cy="55" r="4" fill="black"/>
+  <circle cx="72.5" cy="55" r="4" fill="black"/>
+  
+  <!-- Whiskers -->
+  <line x1="42.5" y1="65" x2="27.5" y2="62.5" stroke="black" stroke-width="1.5"/>
+  <line x1="42.5" y1="70" x2="27.5" y2="70" stroke="black" stroke-width="1.5"/>
+  <line x1="42.5" y1="75" x2="27.5" y2="77.5" stroke="black" stroke-width="1.5"/>
+  
+  <line x1="77.5" y1="65" x2="92.5" y2="62.5" stroke="black" stroke-width="1.5"/>
+  <line x1="77.5" y1="70" x2="92.5" y2="70" stroke="black" stroke-width="1.5"/>
+  <line x1="77.5" y1="75" x2="92.5" y2="77.5" stroke="black" stroke-width="1.5"/>
+</svg>
