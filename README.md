@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# React Web Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive React web application, featuring a modern UI with documentation, features showcase, and previews sections.
 
-## Available Scripts
+## Quick Start
 
-In the project directory, you can run:
+> **Note**: This is a complete React project, no need to run `create-react-app`.
 
-### `npm start`
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/webpage.git
+cd webpage
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Start the development server:
+```bash
+npm start
+```
 
-### `npm test`
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Available Routes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `/` - Homepage/Main section
+- `/features` - Features showcase
+- `/documentation` - Documentation homepage
+- `/documentation/:topic` - Individual documentation pages
+- `/previews` - Preview section
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Documentation
 
-### `npm run eject`
+The documentation system supports markdown files placed in `src/docs/`:
+- Use `.md` extension
+- Currently includes:
+  - `installation.md`
+  - `security.md`
+- Add new documentation by creating additional markdown files
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The `configs` directory contains configuration files for different sections:
+- `Home.js` - Homepage configuration
+- `documentation.js` - Documentation section settings
+- `features.js` - Features section content
+- `previews.js` - Preview section configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deploying to GitHub Pages
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Install gh-pages:
+```bash
+npm install --save-dev gh-pages
+```
 
-## Learn More
+2. Add to `package.json`:
+```json
+{
+  "homepage": "https://yourusername.github.io/webpage",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Update Router in `src/App.js`:
+```javascript
+import { HashRouter as Router } from 'react-router-dom';
+// Replace BrowserRouter with HashRouter
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Deploy:
+```bash
+npm run deploy
+```
 
-### Code Splitting
+Your site will be available at `https://yourusername.github.io/webpage`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Development
 
-### Analyzing the Bundle Size
+1. Make changes to components in `src/components`
+2. Update configurations in `src/configs`
+3. Add documentation in `src/docs`
+4. Test locally using `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Troubleshooting
 
-### Making a Progressive Web App
+1. Component Issues:
+   - Check component imports in App.js
+   - Verify route paths
+   - Check configuration files in configs directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Documentation Issues:
+   - Ensure markdown files exist in src/docs
+   - Verify file names match routes
+   - Check markdown syntax
 
-### Advanced Configuration
+3. Deployment Issues:
+   - Verify repository name in package.json homepage
+   - Check GitHub repository permissions
+   - Ensure GitHub Pages is enabled
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Support
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For issues and questions, please open an issue in the repository.
