@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/tiakavousi/webpage.git/static/css/main.25727233.css",
+    "main.js": "/tiakavousi/webpage.git/static/js/main.12b2e6f7.js",
+    "static/js/209.c4aa43c3.chunk.js": "/tiakavousi/webpage.git/static/js/209.c4aa43c3.chunk.js",
+    "static/js/867.4f253cda.chunk.js": "/tiakavousi/webpage.git/static/js/867.4f253cda.chunk.js",
+    "static/media/logo.jpeg": "/tiakavousi/webpage.git/static/media/logo.987279fdef3fbdc02415.jpeg",
+    "static/media/installation.md": "/tiakavousi/webpage.git/static/media/installation.6527c7ee39fac46f6429.md",
+    "static/media/security.md": "/tiakavousi/webpage.git/static/media/security.efb3e47ca61a6ba93569.md",
+    "index.html": "/tiakavousi/webpage.git/index.html",
+    "main.25727233.css.map": "/tiakavousi/webpage.git/static/css/main.25727233.css.map",
+    "main.12b2e6f7.js.map": "/tiakavousi/webpage.git/static/js/main.12b2e6f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25727233.css",
+    "static/js/main.12b2e6f7.js"
+  ]
+}
